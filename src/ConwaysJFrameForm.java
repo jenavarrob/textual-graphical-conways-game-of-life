@@ -484,7 +484,7 @@ public class ConwaysJFrameForm extends javax.swing.JFrame {
                 _gwelt[i][j] = _gwelt_neu[i][j];
 
                 if (_gwelt[i][j]) {
-                    g.setColor(new Color(random.nextInt(256), random.nextInt(256), random.nextInt(256)));  //get a new random color
+                    g.setColor(randomColor());
                     g.drawLine(i, j, i, j);
                 } else {
                     g.setColor(new Color(255, 255, 255));
@@ -499,7 +499,7 @@ public class ConwaysJFrameForm extends javax.swing.JFrame {
 
     private Color randomColor() {
         return new Color(random.nextInt(256), random.nextInt(256), random.nextInt(256));
-    }
+    } 
 
     /**
      * @param args the command line arguments
