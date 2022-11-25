@@ -495,7 +495,7 @@ public class ConwaysJFrameForm extends javax.swing.JFrame {
         }
         
         g.dispose();
-    }//GEN-LAST:event_jButton_StepGraphicalActionPerformed
+    }////GEN-LAST:event_jButton_StepGraphicalActionPerformed
 
     private Color randomColor() {
         return new Color(random.nextInt(256), random.nextInt(256), random.nextInt(256));
