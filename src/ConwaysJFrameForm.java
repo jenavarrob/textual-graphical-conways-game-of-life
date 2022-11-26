@@ -297,9 +297,9 @@ public class ConwaysJFrameForm extends javax.swing.JFrame {
         // TODO add your handling code here:
         Graphics g = canvas1.getGraphics();
 
-        for (int x = 0; x < canvas1.getWidth(); x++) {
-            for (int y = 0; y < canvas1.getHeight(); y++) {
-                g.setColor(new Color(random.nextInt(256), random.nextInt(256), random.nextInt(256)));  //get a new random color
+        for (int x = 0; x < canvas1.getHeight(); x++) {
+            for (int y = 0; y < canvas1.getWidth(); y++) {
+                g.setColor(randomColor());  //get a new random color
                 g.drawLine(x, y, x, y);
             }
         }
@@ -437,7 +437,7 @@ public class ConwaysJFrameForm extends javax.swing.JFrame {
             for (int j = 1; j < canvas1.getWidth()-1; j++) {
                 _gwelt[i][j] = random.nextBoolean();
                 if (_gwelt[i][j]) {
-                    g.setColor(new Color(random.nextInt(256), random.nextInt(256), random.nextInt(256)));  //get a new random color
+                    g.setColor(randomColor());  //get a new random color
                     g.drawLine(i, j, i, j);
                 } else {
                     g.setColor(new Color(255, 255, 255));
